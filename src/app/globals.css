@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+  --card: 222 47% 11%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 239 84% 67%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 142 71% 45%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 239 84% 67%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --ring: 239 84% 67%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 222 47% 4%;
+  --foreground: 210 40% 98%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(to bottom, #0f172a, #020617);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl rounded-xl transition-all duration-200;
+  }
+  
+  .glass-card:hover {
+    @apply border-white/20 bg-white/10;
+  }
+
+  .btn-glow {
+    @apply relative overflow-hidden transition-all duration-200;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+  }
+
+  .btn-glow:hover {
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.5);
+    @apply scale-105;
+  }
+
+  .nav-link-active {
+    @apply bg-primary/20 text-primary border-r-4 border-primary;
+  }
+}
+
+.font-headline {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}

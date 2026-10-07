@@ -1,0 +1,16 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Futuristic tech background",
+      "imageUrl": "https://picsum.photos/seed/tech1/1920/1080",
+      "imageHint": "futuristic technology"
+    },
+    {
+      "id": "battle-arena",
+      "description": "Cyberpunk arena for coding battles",
+      "imageUrl": "https://picsum.photos/seed/battle/1200/800",
+      "imageHint": "cyberpunk arena"
+    }
+  ]
+}
