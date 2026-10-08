@@ -74,6 +74,19 @@ export default function ConceptMasteryPage() {
       setUnlockedStages(prev => Array.from(new Set([...prev, 'interview'])) as StudyStage[]);
     }
   }, [activeStage, unlockedStages, concept]);
+  const MIGRATED_LESSONS = [
+    'os_deadlock', 'os_process_thread', 'os_cpu_scheduling', 'os_paging',
+    'dsa_binary_search', 'dsa_bfs', 'dsa_dp_fibonacci', 'dsa_n_queens',
+    'dbms_acid', 'dbms_bplus_tree', 'dbms_normalization', 'dbms_isolation',
+    'cn_tcp_udp', 'cn_dns_resolution', 'cn_osi_model',
+    'sd_load_balancer', 'sd_cap_theorem',
+    'web_event_loop', 'web_dom_tree',
+    'oops_solid', 'aiml_gradient_descent', 'automata_dfa'
+  ];
+  if (MIGRATED_LESSONS.includes(conceptId as string)) {
+    router.replace(`/interactive/${conceptId}`);
+    return <div className="h-screen w-screen bg-[#020617] flex items-center justify-center"><Loader2 className="animate-spin text-indigo-500 w-8 h-8" /></div>;
+  }
 
   if (!concept) return null;
 

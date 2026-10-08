@@ -123,6 +123,28 @@ export const SUBJECTS_HUB: Record<SubjectId, Subject> = {
         practiceQuestions: [],
         interviewPrompts: ["Which data structure is used in BFS?", "Can BFS find the shortest path in a weighted graph?"],
         cards: [{ id: 'dsa-bfs-1', type: 'theory', title: 'The Queue', content: 'BFS uses a FIFO (First-In-First-Out) queue to track nodes to visit next.' }]
+      },
+      {
+        id: 'dsa_dp_fibonacci',
+        subjectId: 'dsa',
+        title: 'Dynamic Programming (Fibonacci)',
+        category: 'Dynamic Programming',
+        difficulty: 'Medium',
+        importance: 0.9,
+        companies: ['Google', 'Amazon'],
+        shortDescription: 'Memoization and overlapping subproblems.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
+      },
+      {
+        id: 'dsa_n_queens',
+        subjectId: 'dsa',
+        title: 'Recursion and Backtracking (N-Queens)',
+        category: 'Backtracking',
+        difficulty: 'Hard',
+        importance: 0.88,
+        companies: ['Meta', 'Microsoft'],
+        shortDescription: 'Pruning invalid paths to avoid brute force.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
       }
     ]
   },
@@ -223,6 +245,28 @@ export const SUBJECTS_HUB: Record<SubjectId, Subject> = {
             }
           }
         ]
+      },
+      {
+        id: 'os_cpu_scheduling',
+        subjectId: 'os',
+        title: 'CPU Scheduling',
+        category: 'Scheduling',
+        difficulty: 'Medium',
+        importance: 0.9,
+        companies: ['Microsoft', 'Amazon'],
+        shortDescription: 'FCFS, SJF, and Round Robin.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
+      },
+      {
+        id: 'os_paging',
+        subjectId: 'os',
+        title: 'Paging and Virtual Memory',
+        category: 'Memory Management',
+        difficulty: 'Medium',
+        importance: 0.92,
+        companies: ['Google', 'Meta'],
+        shortDescription: 'How the OS maps virtual addresses to physical RAM.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
       }
     ]
   },
@@ -269,6 +313,39 @@ export const SUBJECTS_HUB: Record<SubjectId, Subject> = {
             }
           }
         ]
+      },
+      {
+        id: 'dbms_bplus_tree',
+        subjectId: 'dbms',
+        title: 'Indexing and B+ Tree',
+        category: 'Storage',
+        difficulty: 'Hard',
+        importance: 0.95,
+        companies: ['Google', 'Meta'],
+        shortDescription: 'How databases find data in milliseconds.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
+      },
+      {
+        id: 'dbms_normalization',
+        subjectId: 'dbms',
+        title: 'Database Normalization',
+        category: 'Design',
+        difficulty: 'Easy',
+        importance: 0.85,
+        companies: ['Amazon', 'Infosys'],
+        shortDescription: 'Organizing data to reduce redundancy.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
+      },
+      {
+        id: 'dbms_isolation',
+        subjectId: 'dbms',
+        title: 'Isolation Levels',
+        category: 'Transactions',
+        difficulty: 'Hard',
+        importance: 0.9,
+        companies: ['Oracle', 'Microsoft'],
+        shortDescription: 'Dirty reads, phantoms, and concurrent safety.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
       }
     ]
   },
@@ -303,6 +380,28 @@ export const SUBJECTS_HUB: Record<SubjectId, Subject> = {
             content: 'TCP uses a 3-way handshake to establish a reliable connection.'
           }
         ]
+      },
+      {
+        id: 'cn_dns_resolution',
+        subjectId: 'cn',
+        title: 'DNS Resolution',
+        category: 'Protocols',
+        difficulty: 'Medium',
+        importance: 0.95,
+        companies: ['Amazon', 'Netflix'],
+        shortDescription: 'How domain names become IP addresses.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
+      },
+      {
+        id: 'cn_osi_model',
+        subjectId: 'cn',
+        title: 'The OSI Model',
+        category: 'Fundamentals',
+        difficulty: 'Easy',
+        importance: 0.90,
+        companies: ['Cisco', 'Microsoft'],
+        shortDescription: 'How a packet is built (Encapsulation).',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
       }
     ]
   },
@@ -337,6 +436,17 @@ export const SUBJECTS_HUB: Record<SubjectId, Subject> = {
             content: 'Load balancers improve availability by preventing any single server from becoming a bottleneck.'
           }
         ]
+      },
+      {
+        id: 'sd_cap_theorem',
+        subjectId: 'system-design',
+        title: 'The CAP Theorem',
+        category: 'Databases',
+        difficulty: 'Hard',
+        importance: 0.98,
+        companies: ['Amazon', 'Google'],
+        shortDescription: 'Consistency, Availability, Partition Tolerance.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
       }
     ]
   },
@@ -362,6 +472,17 @@ export const SUBJECTS_HUB: Record<SubjectId, Subject> = {
         practiceQuestions: [{ question: "Microtask vs Macrotask?", answer: "Microtasks (Promises) have higher priority than macrotasks (setTimeout).", difficulty: "Medium" }],
         interviewPrompts: ["Explain Hoisting.", "What are Closures?"],
         cards: [{ id: 'web-ev-1', type: 'theory', title: 'Event Loop', content: 'JS executes code line by line but handles async tasks via the loop.' }]
+      },
+      {
+        id: 'web_dom_tree',
+        subjectId: 'web-dev',
+        title: 'The DOM Tree',
+        category: 'Browser Internals',
+        difficulty: 'Easy',
+        importance: 0.90,
+        companies: ['Google', 'Meta'],
+        shortDescription: 'How browsers represent HTML in memory.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
       }
     ]
   },
@@ -396,7 +517,19 @@ export const SUBJECTS_HUB: Record<SubjectId, Subject> = {
     description: 'Neural networks and intelligence models.',
     icon: 'Zap',
     color: 'text-orange-400',
-    concepts: []
+    concepts: [
+      {
+        id: 'aiml_gradient_descent',
+        subjectId: 'aiml',
+        title: 'Gradient Descent',
+        category: 'Optimization',
+        difficulty: 'Medium',
+        importance: 0.95,
+        companies: ['OpenAI', 'Google'],
+        shortDescription: 'How AI models actually learn.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
+      }
+    ]
   },
   'automata': {
     id: 'automata',
@@ -404,6 +537,18 @@ export const SUBJECTS_HUB: Record<SubjectId, Subject> = {
     description: 'Formal languages and state machines.',
     icon: 'Activity',
     color: 'text-slate-500',
-    concepts: []
+    concepts: [
+      {
+        id: 'automata_dfa',
+        subjectId: 'automata',
+        title: 'Deterministic Finite Automaton',
+        category: 'State Machines',
+        difficulty: 'Hard',
+        importance: 0.85,
+        companies: ['Amazon', 'Microsoft'],
+        shortDescription: 'The math behind Regular Expressions.',
+        longExplanation: '', analogy: '', relatedProblemIds: [], practiceQuestions: [], interviewPrompts: [], cards: []
+      }
+    ]
   }
 };
